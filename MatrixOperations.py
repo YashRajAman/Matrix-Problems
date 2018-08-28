@@ -1,3 +1,4 @@
+#numpy provide every stuff to do in one line
 import numpy as np
 m1 = [[2,3,4],[7,9,2],[5,7,9]]
 m2 = [[1,4/2,3],[1,2,3],[1,2,3]]
@@ -29,11 +30,7 @@ def Matrix_Mult(matrix1, matrix2):
 	return result_mat
 
 def MatrixScalarMult(scalar, matrix):
-	i=j=0
-	for i in range(len(matrix)):
-		for j in range(len(matrix[0])):
-			matrix[i][j]=scalar*matrix[i][j]
-	return np.array(matrix, float)
+	return (np.array(matrix, float)*scalar)
 
 def MatrixAddition(mat1, mat2):
 	try:
